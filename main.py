@@ -10,7 +10,7 @@ from google.cloud import firestore
 
 app = FastAPI()
 
-PROJECT_ID = "tsaopaofenghsiung2025"
+PROJECT_ID = "myvue3-e45b9"
 
 b64_cred = os.getenv("GOOGLE_APPLICATION_CREDENTIALS_B64")
 if not b64_cred:
