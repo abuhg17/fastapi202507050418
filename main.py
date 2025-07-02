@@ -1,8 +1,14 @@
 import base64
 import json
+import os
+import datetime
+from fastapi import FastAPI, HTTPException, Query
+from fastapi.responses import PlainTextResponse, StreamingResponse
+import httpx
 from google.oauth2 import service_account
 from google.cloud import firestore
-import os
+
+app = FastAPI()
 
 PROJECT_ID = "myvue3-e45b9"
 
